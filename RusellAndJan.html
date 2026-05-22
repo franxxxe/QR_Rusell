@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Rusell & Jan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Montserrat', sans-serif;
+            background:#f8f5f1;
+            color:#3d3d3d;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .card{
+            width:100%;
+            max-width:700px;
+            background:white;
+            border-radius:24px;
+            padding:60px 40px;
+            text-align:center;
+            box-shadow:0 10px 40px rgba(0,0,0,0.08);
+            position:relative;
+            overflow:hidden;
+        }
+
+        .top-line,
+        .bottom-line{
+            width:80px;
+            height:1px;
+            background:#bfa37a;
+            margin:0 auto 25px;
+        }
+
+        .bottom-line{
+            margin:30px auto 0;
+        }
+
+        .invite{
+            letter-spacing:4px;
+            font-size:12px;
+            text-transform:uppercase;
+            color:#9b8a74;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-family:'Cormorant Garamond', serif;
+            font-size:68px;
+            font-weight:400;
+            line-height:1.1;
+            color:#2f2f2f;
+        }
+
+        .and{
+            font-size:28px;
+            margin:10px 0;
+            color:#bfa37a;
+            font-family:'Cormorant Garamond', serif;
+        }
+
+        .message{
+            margin-top:35px;
+            line-height:1.9;
+            font-size:15px;
+            color:#666;
+        }
+
+        .date{
+            margin-top:40px;
+            font-family:'Cormorant Garamond', serif;
+            font-size:34px;
+            color:#2f2f2f;
+        }
+
+        .year{
+            margin-top:5px;
+            letter-spacing:3px;
+            color:#9b8a74;
+            font-size:13px;
+        }
+
+        .footer{
+            margin-top:45px;
+            font-size:13px;
+            color:#777;
+            line-height:1.8;
+        }
+
+        .flower{
+            position:absolute;
+            width:180px;
+            opacity:0.05;
+        }
+
+        .flower.top{
+            top:-30px;
+            left:-30px;
+        }
+
+        .flower.bottom{
+            bottom:-30px;
+            right:-30px;
+            transform:rotate(180deg);
+        }
+
+        @media(max-width:600px){
+
+            .card{
+                padding:45px 25px;
+                border-radius:18px;
+            }
+
+            h1{
+                font-size:48px;
+            }
+
+            .date{
+                font-size:28px;
+            }
+
+            .message{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <svg class="flower top" viewBox="0 0 200 200">
+            <path fill="#bfa37a"
+                d="M45.4,-55.7C58.9,-43.7,69.7,-29,73.3,-12.3C76.8,4.5,73.2,23.2,63.1,37.2C53.1,51.2,36.5,60.6,18.8,67.5C1.2,74.4,-17.5,78.7,-33.2,72.9C-49,67.1,-61.8,51.2,-67.3,33.6C-72.8,16,-71,-3.3,-64.2,-19.8C-57.4,-36.4,-45.7,-50.2,-31.8,-61.7C-17.8,-73.3,-1.7,-82.5,12.7,-78.7C27.2,-74.8,54.4,-67.7,45.4,-55.7Z"
+                transform="translate(100 100)" />
+        </svg>
+
+        <svg class="flower bottom" viewBox="0 0 200 200">
+            <path fill="#bfa37a"
+                d="M45.4,-55.7C58.9,-43.7,69.7,-29,73.3,-12.3C76.8,4.5,73.2,23.2,63.1,37.2C53.1,51.2,36.5,60.6,18.8,67.5C1.2,74.4,-17.5,78.7,-33.2,72.9C-49,67.1,-61.8,51.2,-67.3,33.6C-72.8,16,-71,-3.3,-64.2,-19.8C-57.4,-36.4,-45.7,-50.2,-31.8,-61.7C-17.8,-73.3,-1.7,-82.5,12.7,-78.7C27.2,-74.8,54.4,-67.7,45.4,-55.7Z"
+                transform="translate(100 100)" />
+        </svg>
+
+        <div class="top-line"></div>
+
+        <div class="invite">
+            Wedding Invitation
+        </div>
+
+        <h1>Rusell</h1>
+
+        <div class="and">&</div>
+
+        <h1>Jan</h1>
+
+        <div class="message">
+            Together with their families,<br>
+            joyfully invite you to celebrate<br>
+            their wedding day.
+        </div>
+
+        <div class="date">
+            July 18
+        </div>
+
+        <div class="year">
+            2026
+        </div>
+
+        <div class="footer">
+            We would be honored<br>
+            to have you with us on this special day.
+        </div>
+
+        <div class="bottom-line"></div>
+
+    </div>
+
+</body>
+</html>
