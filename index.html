@@ -100,25 +100,25 @@
             line-height:1.8;
         }
 
-        .flower{
-            position:absolute;
-            width:180px;
-            opacity:0.05;
+        /* BUTTON STYLE */
+        .download-btn{
+            margin-top:35px;
+            display:inline-block;
+            padding:12px 25px;
+            background:#2f2f2f;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:14px;
+            letter-spacing:1px;
+            transition:0.3s;
         }
 
-        .flower.top{
-            top:-30px;
-            left:-30px;
-        }
-
-        .flower.bottom{
-            bottom:-30px;
-            right:-30px;
-            transform:rotate(180deg);
+        .download-btn:hover{
+            background:#bfa37a;
         }
 
         @media(max-width:600px){
-
             .card{
                 padding:45px 25px;
                 border-radius:18px;
@@ -141,18 +141,6 @@
 <body>
 
     <div class="card">
-
-        <svg class="flower top" viewBox="0 0 200 200">
-            <path fill="#bfa37a"
-                d="M45.4,-55.7C58.9,-43.7,69.7,-29,73.3,-12.3C76.8,4.5,73.2,23.2,63.1,37.2C53.1,51.2,36.5,60.6,18.8,67.5C1.2,74.4,-17.5,78.7,-33.2,72.9C-49,67.1,-61.8,51.2,-67.3,33.6C-72.8,16,-71,-3.3,-64.2,-19.8C-57.4,-36.4,-45.7,-50.2,-31.8,-61.7C-17.8,-73.3,-1.7,-82.5,12.7,-78.7C27.2,-74.8,54.4,-67.7,45.4,-55.7Z"
-                transform="translate(100 100)" />
-        </svg>
-
-        <svg class="flower bottom" viewBox="0 0 200 200">
-            <path fill="#bfa37a"
-                d="M45.4,-55.7C58.9,-43.7,69.7,-29,73.3,-12.3C76.8,4.5,73.2,23.2,63.1,37.2C53.1,51.2,36.5,60.6,18.8,67.5C1.2,74.4,-17.5,78.7,-33.2,72.9C-49,67.1,-61.8,51.2,-67.3,33.6C-72.8,16,-71,-3.3,-64.2,-19.8C-57.4,-36.4,-45.7,-50.2,-31.8,-61.7C-17.8,-73.3,-1.7,-82.5,12.7,-78.7C27.2,-74.8,54.4,-67.7,45.4,-55.7Z"
-                transform="translate(100 100)" />
-        </svg>
 
         <div class="top-line"></div>
 
@@ -184,6 +172,13 @@
             We would be honored<br>
             to have you with us on this special day.
         </div>
+
+        <!-- DOWNLOAD BUTTON -->
+        <a class="download-btn"
+           href="./Rusell_File.pdf"
+           download="Rusell_File.pdf">
+           Download Invitation PDF
+        </a>
 
         <div class="bottom-line"></div>
 

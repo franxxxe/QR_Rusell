@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation QR</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f5f5f5;
+            font-family:Arial, sans-serif;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 4px 20px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        h2{
+            margin-bottom:20px;
+            font-weight:normal;
+        }
+
+        #qrcode{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Rusell & Jan</h2>
+
+    <div id="qrcode"></div>
+
+</div>
+
+<script>
+
+new QRCode(document.getElementById("qrcode"), {
+    text: "https://franxxxe.github.io/QR_Rusell/index.html?utm_source=chatgpt.com",
+    width: 250,
+    height: 250
+});
+
+</script>
+
+</body>
+</html>
